@@ -1,0 +1,21 @@
+#Signal - False news list
+#This is a list of websites that maliciously report false information for either political or commercial gain.
+
+*.abcnews.com.co
+*.bizstandardnews.com
+*.breakingnews247.net
+*.christiantimesnewspaper.com
+*.cnn-trending.com
+*.denverguardian.com
+*.infowars.com
+*.nationalreport.net
+*.naturalnews.com
+*.prntly.com
+*.realfarmacy.com
+*.rense.com
+*.stormfront.org
+*.thelastlineofdefense.org
+*.thewhitevoice.com
+*.usatodaysnews.com
+*.worldnewsreport.com
+*.yournewswire.com

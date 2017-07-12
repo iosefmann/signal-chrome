@@ -1,0 +1,15 @@
+#Signal – Trusted organisations list
+#These are organisations with a good track record of trustworthy reporting. This list does not take into account political biases or ownership.
+
+*.abc.net.au #Australian Broadcasting Corporation
+*.aljazeera.com #Al Jazeera English
+*.aljazeera.net #Al Jazeera Arabic
+*.ap.org #Associated Press
+*.apnews.org #Associated Press
+bbc.co.uk #British Broadcasting Corporation
+bbc.com #British Broadcasting Corporation
+*.cnn.com #CNN
+*.politico.com
+*.politico.eu
+sbs.com.au #Special Broadcasting Service
+*.snopes.com #Snopes

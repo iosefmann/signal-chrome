@@ -1,0 +1,8 @@
+#Signal - Non-free source list
+#This list is for news sources in countries where news is heavily controlled and where readers should take claims with a grain of salt.
+
+*.chinadaily.com.cn #China Daily
+*.news.ca
+*.shanghaidaily.com #Shanghai Daily
+*.xinhuanet.com #xinhuanet
+*.globaltimes.cn #Global Times (China)
