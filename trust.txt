@@ -9,6 +9,7 @@
 bbc.co.uk #British Broadcasting Corporation
 bbc.com #British Broadcasting Corporation
 *.cnn.com #CNN
+*.theintercept.com
 *.politico.com
 *.politico.eu
 sbs.com.au #Special Broadcasting Service
