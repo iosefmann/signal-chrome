@@ -25,3 +25,7 @@ The sites listed [*salt.txt*](/blob/master/salt.txt) are either news organisatio
 ### False
 
 The sites listed in [*false.txt*](/blob/master/false.txt) are sites that maliciously report false information for either political or commercial gain. Sites in this list will cause Signal to display a red icon.
+
+<hr />
+
+> Signal uses and includes a copy of [jQuery](https://jquery.com/) which is licensed under an MIT license.
