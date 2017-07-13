@@ -1,27 +1,31 @@
 $(function(){
-          $.get('trust.txt', function(data){
+          $.get('trust.txt', function trustArray(data){
               var trust = data.split('\n');
-              console.log(trust);
           });
       });
 
 $(function(){
-          $.get('satire.txt', function(data){
+          $.get('satire.txt', function satireArray(data){
               var satire = data.split('\n');
-              console.log(satire);
           });
       });
 
       $(function(){
-          $.get('salt.txt', function(data){
+          $.get('salt.txt', function saltArray(data){
               var salt = data.split('\n');
-              console.log(salt);
           });
       });
 
 $(function(){
-          $.get('false.txt', function(data){
+          $.get('false.txt', function falseArray(data){
               var fake = data.split('\n');
-              console.log(fake);
           });
       });
+
+
+
+chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
+   chrome.tabs.query({currentWindow: true, active: true}, function(tabs){
+    var currentTab = tabs[0].url
+    });
+}); 
