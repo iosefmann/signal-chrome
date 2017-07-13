@@ -5,7 +5,7 @@ $(function(){
       });
 
 $(function(){
-          $.get('satire.txt', function satireArray(data){
+          $.get('satire.txt', function satireray(data){
               var satire = data.split('\n');
           });
       });
@@ -27,5 +27,13 @@ $(function(){
 chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
    chrome.tabs.query({currentWindow: true, active: true}, function(tabs){
     var currentTab = tabs[0].url
+    console.log(currentTab);
+    });
+}); 
+
+chrome.tabs.onActivated.addListener(function(tabId, changeInfo, tab) {
+   chrome.tabs.query({currentWindow: true, active: true}, function(tabs){
+    var currentTab = tabs[0].url
+    console.log(currentTab);
     });
 }); 
