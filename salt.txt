@@ -1,11 +1,8 @@
-#Signal - Non-free source list
-#This list is for news sources in countries where news is heavily controlled or where a site has a mixed reputation in terms of factuality and where readers should take claims with a grain of salt. 
-
-*.breitbart.com #Breitbart
-*.buzzfeed.com #Buzzfeed
-*.chinadaily.com.cn #China Daily
-*.globaltimes.cn #Global Times (China)
-milo.yiannopolous.net #Milo Yiannopolous
-*.news.cn #Xinhua News Agency
-*.shanghaidaily.com #Shanghai Daily
-*.xinhuanet.com #Xinhua News Agency
+*.breitbart.com
+*.buzzfeed.com
+*.chinadaily.com.cn
+*.globaltimes.cn
+milo.yiannopolous.net
+*.news.cn
+*.shanghaidaily.com
+*.xinhuanet.com

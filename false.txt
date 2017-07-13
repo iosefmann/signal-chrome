@@ -1,6 +1,3 @@
-#Signal - False news list
-#This is a list of websites that maliciously report false information for either political or commercial gain.
-
 *.abcnews.com.co
 *.bizstandardnews.com
 *.breakingnews247.net

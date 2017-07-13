@@ -1,12 +1,9 @@
-#Signal - Satire List
-#These are organisations that produce humourous news-like content that is not intended to mislead.
-
 *.betootaadvocate.com
-*.chaser.com.au #The Chaser
-*.clickhole.com #ClickHole (The Onion)
-comedy.sbs.com.au #SBS Comedy / The Backburner
+*.chaser.com.au
+*.clickhole.com
+sbs.com.au/comedy/
 *.empirenews.net
 *.liberaldarkness.com
-*.starwipe.com #StarWipe (The Onion)
-*.theshovel.com.au #The Shovel
-*.theonion.com #The Onion
+*.starwipe.com
+*.theshovel.com.au
+*.theonion.com

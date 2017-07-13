@@ -9,8 +9,7 @@
         "activeTab"
     ],
     "background": {
-        "scripts": ["signal.js"],
-        "persistent": false
+        "scripts": ["jquery.js", "signal.js"]
     },
     
     "incognito": "split",
