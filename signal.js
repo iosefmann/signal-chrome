@@ -1,43 +1,63 @@
+var Signal = {
+    trust: null,
+    satire: null,
+    salt: null,
+    fake: null,
+    currentTab: null
+};
+
 $(function(){
           $.get('trust.txt', function trustArray(data){
-              var trust = data.split('\n');
-              console.log("Signal: " + trust.length + " trusted sites loaded");
+              Signal.trust = data.split('\n');
+              console.log("Signal: " + Signal.trust.length + " trusted sites loaded");
           });
       });
 
 $(function(){
           $.get('satire.txt', function satireArray(data){
-              var satire = data.split('\n');
-              console.log("Signal: " + satire.length + " satirical sites loaded");
+              Signal.satire = data.split('\n');
+              console.log("Signal: " + Signal.satire.length + " satirical sites loaded");
           });
       });
 
       $(function(){
           $.get('salt.txt', function saltArray(data){
-              var salt = data.split('\n');
-              console.log("Signal: " + salt.length + " salty sites loaded");
+            Signal.salt = data.split('\n');
+            console.log("Signal: " + Signal.salt.length + " salty sites loaded");
           });
       });
 
 $(function(){
           $.get('false.txt', function falseArray(data){
-              var fake = data.split('\n');
-              console.log("Signal: " + fake.length + " false sites loaded");
+              Signal.fake = data.split('\n');
+              console.log("Signal: " + Signal.fake.length + " false sites loaded");
           });
       });
 
-
-
 chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
    chrome.tabs.query({currentWindow: true, active: true}, function(tabs){
-    var currentTab = tabs[0].url
-    console.log("Signal: " + currentTab);
+    Signal.currentTab = tabs[0].url
+    console.log("Signal: " + Signal.currentTab);
     });
 }); 
 
 chrome.tabs.onActivated.addListener(function(tabId, changeInfo, tab) {
    chrome.tabs.query({currentWindow: true, active: true}, function(tabs){
-    var currentTab = tabs[0].url
-    console.log("Signal: " + currentTab);
+    Signal.currentTab = tabs[0].url
+    console.log("Signal: " + Signal.currentTab);
     });
 }); 
+
+console.log(Signal.trust);
+
+/* if(Signal.trust.includes(Signal.currentTab)){
+        chrome.browserAction.setIcon({path: "images/trust128.png"});
+    } else if(Signal.satire.includes(currentTab)) {
+        chrome.browserAction.setIcon({path: "images/satire128.png"});
+    } else if(Signal.salt.includes(currentTab)) {
+        chrome.browserAction.setIcon({path:"images/salt128.png"});
+    } else if(Signal.fake.includes(currentTab)) {
+        chrome.browserAction.setIcon({path:"images/false128.png"});
+    } else {
+        chrome.browserAction.setIcon({path:"images/idle128.png"})
+    } */

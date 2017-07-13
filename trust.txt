@@ -6,6 +6,7 @@
 bbc.co.uk
 bbc.com
 *.cnn.com
+*.foxnews.com
 *.theintercept.com
 *.politico.com
 *.politico.eu
