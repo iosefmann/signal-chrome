@@ -12,19 +12,19 @@ It reads the URL of the page the user is reading, checks it against four lists, 
 
 ### Trustworthy
 
-The sites listed in [*trust.txt*](/blob/master/trust.txt) are known for high-quality journalism, regardless of their political leanings. Sites in this list will cause Signal to display a green icon.
+The sites listed in [*trust.txt*](https://github.com/joeymann/signal-chrome/blob/master/trust.txt) are known for high-quality journalism, regardless of their political leanings. Sites in this list will cause Signal to display a green icon.
 
 ### Satirical
 
-The sites listed in [*satire.txt*](/blob/master/satire.txt) are organisations that produce humourous news-like content that is not intended to mislead. Sites in this list will cause Signal to display a yellow icon.
+The sites listed in [*satire.txt*](https://github.com/joeymann/signal-chrome/blob/master/satire.txt) are organisations that produce humourous news-like content that is not intended to mislead. Sites in this list will cause Signal to display a yellow icon.
 
 ### Salt
 
-The sites listed [*salt.txt*](/blob/master/salt.txt) are either news organisations based in countries with known problems with press freedom or have a poorer reputation with handling factual information and thus, extraordinary claims made on these sites should be *[taken with a grain of salt](https://en.wiktionary.org/wiki/with_a_grain_of_salt#English)*. Sites in this list will cause Signal to display a blue icon.
+The sites listed [*salt.txt*](https://github.com/joeymann/signal-chrome/blob/master/salt.txt) are either news organisations based in countries with known problems with press freedom or have a poorer reputation with handling factual information and thus, extraordinary claims made on these sites should be *[taken with a grain of salt](https://en.wiktionary.org/wiki/with_a_grain_of_salt#English)*. Sites in this list will cause Signal to display a blue icon.
 
 ### False
 
-The sites listed in [*false.txt*](/blob/master/false.txt) are sites that maliciously report false information for either political or commercial gain. Sites in this list will cause Signal to display a red icon.
+The sites listed in [*false.txt*](https://github.com/joeymann/signal-chrome/blob/master/false.txt) are sites that maliciously report false information for either political or commercial gain. Sites in this list will cause Signal to display a red icon.
 
 <hr />
 
