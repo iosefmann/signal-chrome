@@ -1,3 +1,7 @@
+/* Signal - a simple fake news checker
+    © 2017 - present Joey Mann
+    See license.md for more information */
+
 var Signal = {
     trust: null,
     satire: null,
@@ -5,7 +9,6 @@ var Signal = {
     fake: null,
     currentTab: null
 };
-
 
 $(function(){
           $.get('trust.txt', function trustArray(data){
