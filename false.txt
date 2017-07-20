@@ -1,4 +1,4 @@
-*.abcnews.com.co
+abcnews.com.co
 *.bizstandardnews.com
 *.breakingnews247.net
 *.christiantimesnewspaper.com

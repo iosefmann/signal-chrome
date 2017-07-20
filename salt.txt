@@ -1,8 +1,9 @@
-*.breitbart.com
-*.buzzfeed.com
-*.chinadaily.com.cn
-*.globaltimes.cn
+www.breitbart.com
+www.buzzfeed.com
+www.chinadaily.com.cn
+www.globaltimes.cn
 milo.yiannopolous.net
-*.news.cn
-*.shanghaidaily.com
-*.xinhuanet.com
+news.cn
+www.news.cn
+www.shanghaidaily.com
+www.xinhuanet.com

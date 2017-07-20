@@ -1,9 +1,8 @@
-*.betootaadvocate.com
-*.chaser.com.au
-*.clickhole.com
-sbs.com.au/comedy/
-*.empirenews.net
-*.liberaldarkness.com
-*.starwipe.com
-*.theshovel.com.au
-*.theonion.com
+www.betootaadvocate.com
+chaser.com.au
+www.clickhole.com
+empirenews.net
+liberaldarkness.com
+www.starwipe.com
+theshovel.com.au
+www.theonion.com
