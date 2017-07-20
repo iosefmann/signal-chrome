@@ -6,6 +6,7 @@ var Signal = {
     currentTab: null
 };
 
+
 $(function(){
           $.get('trust.txt', function trustArray(data){
               Signal.trust = data.split('\n');
@@ -36,28 +37,43 @@ $(function(){
 
 chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
    chrome.tabs.query({currentWindow: true, active: true}, function(tabs){
-    Signal.currentTab = tabs[0].url
+    Signal.currentTab = tabs[0].url.split("/")[2];
+    function runSignalTest() {
+        if(Signal.trust.indexOf(Signal.currentTab) !== -1) {
+            chrome.browserAction.setIcon({path:"images/trust128.png"});
+        } else if(Signal.satire.indexOf(Signal.currentTab) !== -1) {
+            chrome.browserAction.setIcon({path:"images/satire128.png"});
+        } else if(Signal.salt.indexOf(Signal.currentTab) !== -1) {
+            chrome.browserAction.setIcon({path:"images/salt128.png"});
+        } else if(Signal.fake.indexOf(Signal.currentTab) !== -1) {
+            chrome.browserAction.setIcon({path:"images/false128.png"});
+        } else {
+            chrome.browserAction.setIcon({path:"images/idle128.png"});
+        }
+    };
     console.log("Signal: " + Signal.currentTab);
+    runSignalTest();
     });
+    
 }); 
 
 chrome.tabs.onActivated.addListener(function(tabId, changeInfo, tab) {
    chrome.tabs.query({currentWindow: true, active: true}, function(tabs){
-    Signal.currentTab = tabs[0].url
+    Signal.currentTab = tabs[0].url.split("/")[2];
     console.log("Signal: " + Signal.currentTab);
+    function runSignalTest() {
+        if(Signal.trust.indexOf(Signal.currentTab) !== -1) {
+            chrome.browserAction.setIcon({path:"images/trust128.png"});
+        } else if(Signal.satire.indexOf(Signal.currentTab) !== -1) {
+            chrome.browserAction.setIcon({path:"images/satire128.png"});
+        } else if(Signal.salt.indexOf(Signal.currentTab) !== -1) {
+            chrome.browserAction.setIcon({path:"images/salt128.png"});
+        } else if(Signal.fake.indexOf(Signal.currentTab) !== -1) {
+            chrome.browserAction.setIcon({path:"images/false128.png"});
+        } else {
+            chrome.browserAction.setIcon({path:"images/idle128.png"});
+        }
+    };
+    runSignalTest();
     });
-}); 
-
-console.log(Signal.trust);
-
-/* if(Signal.trust.includes(Signal.currentTab)){
-        chrome.browserAction.setIcon({path: "images/trust128.png"});
-    } else if(Signal.satire.includes(currentTab)) {
-        chrome.browserAction.setIcon({path: "images/satire128.png"});
-    } else if(Signal.salt.includes(currentTab)) {
-        chrome.browserAction.setIcon({path:"images/salt128.png"});
-    } else if(Signal.fake.includes(currentTab)) {
-        chrome.browserAction.setIcon({path:"images/false128.png"});
-    } else {
-        chrome.browserAction.setIcon({path:"images/idle128.png"})
-    } */
+});
