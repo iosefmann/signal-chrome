@@ -1,6 +1,6 @@
 # Signal
 
-> This add-on is very early in development. The only thing that will happen is the idle icon will appear and Chrome might throw an error for bad Javascript.
+> This add-on is very early in development. Before a Chrome web store release can be made, a number of fixes and optimisations need to be made.
 
 <table><tr><td><img src="https://raw.githubusercontent.com/joeymann/signal-chrome/master/images/idle128.png"</img> </td><td>SIGNAL</td></tr></table>
 
@@ -28,4 +28,4 @@ The sites listed in [*false.txt*](https://github.com/joeymann/signal-chrome/blob
 
 <hr />
 
-> Signal uses and includes a copy of [jQuery](https://jquery.com/) which is licensed under an MIT license.
+> Signal uses and includes a copy of [jQuery](https://jquery.com/) which is licensed under an MIT license. It also uses data from [OpenSources](https://github.com/BigMcLargeHuge/opensources), a project to list fake news sites.
