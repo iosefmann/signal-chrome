@@ -55,9 +55,9 @@ function runSignalTest() {
         } else if(Signal.trust.indexOf(AltCommands.currentTabSans) !== -1) {
             chrome.browserAction.setIcon({path:"images/trust128.png"});
         } else if(Signal.satire.indexOf(AltCommands.currentTabSans) !== -1) {
-            chrome.browserAction.setIcon({path:"images/salt128.png"});
+            chrome.browserAction.setIcon({path:"images/satire128.png"});
         } else if(Signal.salt.indexOf(AltCommands.currentTabSans) !== -1) {
-            chrome.browserAction.setIcon({path:"images/false128.png"});
+            chrome.browserAction.setIcon({path:"images/salt128.png"});
         } else if(Signal.fake.indexOf(AltCommands.currentTabSans) !== -1) {
             chrome.browserAction.setIcon({path:"images/false128.png"});
         } else {
