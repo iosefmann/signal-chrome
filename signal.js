@@ -73,7 +73,7 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
     Signal.currentTab = tabs[0].url.split("/")[2];
     AltCommands.currentTabSans = Signal.currentTab.slice(4, Signal.currentTab.length);
     runSignalTest();
-    console.log("Signal: " + Signal.currentTab);
+    // console.log("Signal: " + Signal.currentTab);
     });
     
 }); 
@@ -82,8 +82,8 @@ chrome.tabs.onActivated.addListener(function(tabId, changeInfo, tab) {
    chrome.tabs.query({currentWindow: true, active: true}, function(tabs){
     Signal.currentTab = tabs[0].url.split("/")[2];
     AltCommands.currentTabSans = Signal.currentTab.slice(4, Signal.currentTab.length);
-    console.log("Signal: " + Signal.currentTab);
-    console.log("Signal: currentTabSans = " + AltCommands.currentTabSans);
+    // console.log("Signal: " + Signal.currentTab);
+    // console.log("Signal: currentTabSans = " + AltCommands.currentTabSans);
     runSignalTest();
     });
 });
