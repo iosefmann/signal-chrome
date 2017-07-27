@@ -10,6 +10,11 @@ var Signal = {
     currentTab: null
 };
 
+var AltCommands = {
+    currentTabSans: null
+}
+
+
 $(function(){
           $.get('trust.txt', function trustArray(data){
               Signal.trust = data.split('\n');
@@ -47,16 +52,28 @@ function runSignalTest() {
             chrome.browserAction.setIcon({path:"images/salt128.png"});
         } else if(Signal.fake.indexOf(Signal.currentTab) !== -1) {
             chrome.browserAction.setIcon({path:"images/false128.png"});
+        } else if(Signal.trust.indexOf(AltCommands.currentTabSans) !== -1) {
+            chrome.browserAction.setIcon({path:"images/trust128.png"});
+        } else if(Signal.satire.indexOf(AltCommands.currentTabSans) !== -1) {
+            chrome.browserAction.setIcon({path:"images/salt128.png"});
+        } else if(Signal.salt.indexOf(AltCommands.currentTabSans) !== -1) {
+            chrome.browserAction.setIcon({path:"images/false128.png"});
+        } else if(Signal.fake.indexOf(AltCommands.currentTabSans) !== -1) {
+            chrome.browserAction.setIcon({path:"images/false128.png"});
         } else {
             chrome.browserAction.setIcon({path:"images/idle128.png"});
         }
     };
 
+
+
+
 chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
    chrome.tabs.query({currentWindow: true, active: true}, function(tabs){
     Signal.currentTab = tabs[0].url.split("/")[2];
-    // console.log("Signal: " + Signal.currentTab);
+    AltCommands.currentTabSans = Signal.currentTab.slice(4, Signal.currentTab.length);
     runSignalTest();
+    console.log("Signal: " + Signal.currentTab);
     });
     
 }); 
@@ -64,7 +81,9 @@ chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
 chrome.tabs.onActivated.addListener(function(tabId, changeInfo, tab) {
    chrome.tabs.query({currentWindow: true, active: true}, function(tabs){
     Signal.currentTab = tabs[0].url.split("/")[2];
-    // console.log("Signal: " + Signal.currentTab);
+    AltCommands.currentTabSans = Signal.currentTab.slice(4, Signal.currentTab.length);
+    console.log("Signal: " + Signal.currentTab);
+    console.log("Signal: currentTabSans = " + AltCommands.currentTabSans);
     runSignalTest();
     });
 });
