@@ -8,6 +8,7 @@ aljazeera.net
 ap.org
 apnews.com
 apnews.org
+aph.gov.au
 arkansasonline.com
 baltimoresun.com
 bbc.co.uk
@@ -15,6 +16,7 @@ bbc.com
 berkshireeagle.com
 bismarcktribune.com
 bostonglobe.com
+britannica.com
 buffalonews.com
 charlotteobserver.com
 chicagotribune.com
@@ -28,6 +30,9 @@ dallasnews.com
 denverpost.com
 desmoinesregister.com
 detroitnews.com
+ebscohost.com
+search.ebscohost.com
+web.b.ebscohost.com
 foxnews.com
 freep.com
 gazette.com
@@ -37,11 +42,13 @@ heraldcourier.com
 heraldtribune.com
 hutchnews.com
 indystar.com
+ebooks.infobaselearning.com
 theintercept.com
 investors.com
 journalnow.com
 journalstar.com
 jsonline.com
+jstor.org
 kansascity.com
 latimes.com
 ledger-enquirer.com
@@ -89,5 +96,7 @@ uticaod.com
 virginislandsdailynews.com
 vox.com
 washingtonpost.com
+whitehouse.gov
+worldbookonline.com
 wsj.com
 wvgazettemail.com
