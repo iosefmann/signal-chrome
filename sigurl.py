@@ -13,10 +13,7 @@ salt = file_salt.read().split('\n')
 fake = file_false.read().split('\n')
 
 print("Signal URL Search - a seach utility for Signal")
-print("SigURL - Trusted sites loaded: ", len(trust))
-print("SigURL - Satire sites loaded: ", len(satire))
-print("SigURL - Salt sites loaded: ", len(salt))
-print("SigURL - False sites loaded: ", len(fake))
+print("SigURL - Total sites loaded: ", str(len(trust + satire + salt + fake)),  "(" + str(len(trust)), "trusted sites, " + str(len(satire)), "satirical sites,", str(len(salt)) + " salted sites, ", str(len(fake)) + " fake sites)")
 
 def searchQuery():
     searchTerm = str(input("Insert query hostname here: "))
