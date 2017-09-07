@@ -15,6 +15,7 @@ aurora-news.us
 barenakedislam.com
 barnesreview.org
 beforeitsnews.com
+bigamericannews.com
 bighairynews.com
 bizstandardnews.com
 bostonleader.com
@@ -150,6 +151,7 @@ politicalo.com
 politicalsitenews.com
 politicalupdator.com
 politicono.com
+politicot.com
 politicsusanews.com
 president45donaldtrump.com
 prisonplanet.com
