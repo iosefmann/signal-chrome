@@ -29,11 +29,11 @@ The sites listed in [*false.txt*](https://github.com/joeymann/signal-chrome/blob
 <hr />
 
 ### SigURL - Signal URL Search
-Signal URL search (sigurl.py) is a command line utility to check if a URL is already in a list so that contributors don't have to cmd-f a URL in every single list.
+Signal URL search ([sigurl.py](https://github.com/joeymann/signal-chrome/blob/master/sigurl.py)) is a command line utility to check if a URL is already in a list so that contributors don't have to cmd-f a URL in every single list.
 
 SigURL runs in a Python 3 shell. On running the script, it will print the number of URLs in each list and then requests a URL to search the lists for. It will then return a result that tells the user which list it is in, if any.
 
-It is included in this repository and reads the same lists as the Chrome extension.
+It is included in this repository and reads the same lists as the Chrome extension. As it is purely a development tool, it will not be included in official releases of the Chrome extension on the Chrome web store.
 
 <hr />
 
