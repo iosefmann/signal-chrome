@@ -17,32 +17,32 @@ var AltCommands = {
 // Functions to load site lists
 
 $(function(){
-          $.get('trust.txt', function trustArray(data){
-              Signal.trust = data.split('\n');
-              // console.log("Signal: " + Signal.trust.length + " trusted sites loaded");
-          });
-      });
+    $.get('trust.txt', function trustArray(data){
+        Signal.trust = data.split('\n');
+        // console.log("Signal: " + Signal.trust.length + " trusted sites loaded");
+    });
+});
 
 $(function(){
-          $.get('satire.txt', function satireArray(data){
-              Signal.satire = data.split('\n');
-              // console.log("Signal: " + Signal.satire.length + " satirical sites loaded");
-          });
-      });
-
-      $(function(){
-          $.get('salt.txt', function saltArray(data){
-            Signal.salt = data.split('\n');
-            // console.log("Signal: " + Signal.salt.length + " salty sites loaded");
-          });
-      });
+    $.get('satire.txt', function satireArray(data){
+        Signal.satire = data.split('\n');
+        // console.log("Signal: " + Signal.satire.length + " satirical sites loaded");
+    });
+});
 
 $(function(){
-          $.get('false.txt', function falseArray(data){
-              Signal.fake = data.split('\n');
-              // console.log("Signal: " + Signal.fake.length + " false sites loaded");
-          });
-      });
+    $.get('salt.txt', function saltArray(data){
+        Signal.salt = data.split('\n');
+        // console.log("Signal: " + Signal.salt.length + " salty sites loaded");
+    });
+});
+
+$(function(){
+    $.get('false.txt', function falseArray(data){
+        Signal.fake = data.split('\n');
+        // console.log("Signal: " + Signal.fake.length + " false sites loaded");
+    });
+});
 
 // Functions to check current hostnames against lists
 
