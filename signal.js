@@ -14,6 +14,8 @@ var AltCommands = {
     currentTabSans: null
 }
 
+// Functions to load site lists
+
 $(function(){
           $.get('trust.txt', function trustArray(data){
               Signal.trust = data.split('\n');
@@ -41,6 +43,8 @@ $(function(){
               // console.log("Signal: " + Signal.fake.length + " false sites loaded");
           });
       });
+
+// Functions to check current hostnames against lists
 
 function runSignalTest() {
     // console.log("Signal - current working URL: " + Signal.currentTab);
@@ -71,6 +75,8 @@ function runSignalTestWWW(){
         chrome.browserAction.setIcon({path:"images/idle128.png"});
     }
 };
+
+// Functions that listen to Chrome Tabs API for changes to the current tab, such as loading a new page (onUpdated) or changing tabs (onActivated)
 
 chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
    chrome.tabs.query({currentWindow: true, active: true}, function(tabs){
