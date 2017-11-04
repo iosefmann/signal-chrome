@@ -1,13 +1,16 @@
 {
     "manifest_version": 2,
     "name": "Signal",
-    "version": "0.1",
+    "version": "1",
     "description": "Are you reading fake news?",
     "author": "Signal",
     "permissions": [
         "tabs",
-        "activeTab"
-    ],
+        "activeTab",
+        "http://*/*",
+        "https://*/*",
+        "<all_urls>"
+     ],
     "background": {
         "scripts": ["jquery.js", "signal.js"]
     },

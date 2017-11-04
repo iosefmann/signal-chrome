@@ -48,6 +48,7 @@ dailynews10.com
 dailynews5.com
 dailynewsposts.info
 dailystormer.com
+dailystormer.ws
 dailysurge.com
 dailyusaupdate.com
 damnleaks.com
@@ -295,3 +296,4 @@ yourfunpage.com
 yournewswire.com
 worldpoliticsnow.com
 whitepower.com
+wnd.com
