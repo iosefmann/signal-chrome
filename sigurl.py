@@ -2,10 +2,10 @@
 # This utility checks the database files for URLs
 # This program is licensed under the GNU General Public License. See license.md for more info.
 
-file_trust = open("trust.txt")
-file_satire = open("satire.txt")
-file_salt = open("salt.txt")
-file_false = open("false.txt")
+file_trust = open("db/web/trust.txt")
+file_satire = open("db/web/satire.txt")
+file_salt = open("db/web/salt.txt")
+file_false = open("db/web/false.txt")
 
 trust = file_trust.read().split('\n')
 satire = file_satire.read().split('\n')
