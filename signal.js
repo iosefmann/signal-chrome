@@ -14,7 +14,8 @@ var Signal = {
 
 var AltCommands = {
     currentTabSans: null,
-    completeURL: null
+    completeURL: null,
+    currentSubreddit: null
 }
 
 var sdReddit = {
@@ -133,18 +134,19 @@ function runSignalTestWWW(){
 
 function runSignalTestReddit(){
     altGetCompleteURL();
+    AltCommands.currentSubreddit = AltCommands.completeURL.split("r/")[1];
     // console.log("Signal: Reddit detected");
 
-    if(AltCommands.completeURL.search("/r/"+ sdReddit.trust) !== -1){
+    if(sdReddit.trust.indexOf(AltCommands.currentSubreddit) !== -1){
         chrome.browserAction.setIcon({path:"images/trust128.png"});
        // console.log("Signal: Icon set to 'trust");
-    } else if(AltCommands.completeURL.search("/r/"+ sdReddit.satire) !== -1){
+    } else if(sdReddit.satire.indexOf(AltCommands.currentSubreddit) !== -1){
         chrome.browserAction.setIcon({path:"images/satire128.png"});
        // console.log("Signal: Icon set to 'satire");
-    } else if(AltCommands.completeURL.search("/r/"+ sdReddit.salt) !== -1){
+    } else if(sdReddit.salt.indexOf(AltCommands.currentSubreddit) !== -1){
         chrome.browserAction.setIcon({path:"images/salt128.png"});
         // console.log("Signal: Icon set to 'salt");
-    } else if(AltCommands.completeURL.search("/r/"+ sdReddit.fake)){
+    } else if(sdReddit.fake.indexOf(AltCommands.currentSubreddit) !== -1){
         chrome.browserAction.setIcon({path:"images/false128.png"});
         // console.log("Signal: Icon set to 'false");
     } else {
@@ -162,7 +164,7 @@ function altGetCompleteURL() {
 }
 
 
-// Functions that listen to Chrome Tabs API for changes to the current tab, such as loading a new page (onUpdated) or changing tabs (onActivated)
+// Functions that listen to Chrome Tabs API for changes to the current tab, including as loading a new page (onUpdated), changing tabs (onActivated)
 
 chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
     chrome.tabs.query({currentWindow: true, active: true}, function(tabs){
